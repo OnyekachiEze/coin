@@ -5,7 +5,6 @@
         position: absolute;
         background-color: var(--maximum-yellow-red);
         right: 0;
-        /* left: 0; */
         width: 105%;
         height: 84%;
         text-align: center;
@@ -18,8 +17,6 @@
         background-color: #4c9e9e;
         transition: 0.3s ease;
     }
-
-    .menu li {}
 
     .menu li+li {
         margin-top: 4rem;
@@ -63,8 +60,6 @@
         border: 1px solid;
     }
 
-
-
     .header-two {
         display: grid;
     }
@@ -72,10 +67,6 @@
     .header-two img {
         width: 100%;
     }
-
-
-
-
 
     .first-text {
         padding: 1rem;
@@ -91,42 +82,6 @@
         margin-top: 1rem;
         line-height: 2rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .trend {
         margin-top: 3rem;
@@ -177,67 +132,10 @@
 
     }
 
-    .trend-card .card-title:is(:hover, :focus) {
-        color: var(--blue-crayola);
-    }
-
-    .trend-card .card-title .span {
-        color: var(--cadet-blue-crayola);
-        display: inline-block;
-        margin-inline-start: 5px;
-    }
-
     .trend-card .card-value {
         color: var(--white);
         font-size: 1.3rem;
         font-weight: var(--fw-700);
         margin-block: 10px;
     }
-
-    .trend-card .card-analytics {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .trend-card .current-price {
-        font-size: var(--fs-7);
-    }
-
-    .container {
-        padding-inline: 80px;
-    }
-
-    .section {
-        padding-block: var(--section-padding);
-    }
-
-    [data-section]>* {
-        transform: translateY(50px);
-        opacity: 1;
-        transition: var(--transition-3);
-    }
-
-    [data-section].active>* {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
-    .badge {
-        color: var(--white);
-        font-size: var(--fs-8);
-        font-weight: var(--fw-700);
-        padding: 4px 8px;
-        border-radius: 50px;
-    }
-
-    .badge.red {
-        background-color: var(--presian-red);
-    }
-
-    .badge.green {
-        background-color: var(--medium-sea-green);
-    }
-
 }
