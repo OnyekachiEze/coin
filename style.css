@@ -88,13 +88,28 @@
 
 }
 
-.nav-btn button{
+.nav-btn {
+    display: flex;
+    margin-left: 3rem;
+    gap: 3rem;
+}
+
+.nav-btn button {
     background-color: var(--black_10);
     color: var(--white);
     border-radius: var(--radius-24);
     padding: 1rem;
-    margin-left: 10rem;
-    border: 1px solid ;
+    border: 1px solid;
+}
+
+
+.nav-btn button:hover {
+    background-color:var(--presian-red);
+    transition:  var(--transition-3);
+    color: var(--eerie-black-1);
+    border: 5px solid white;
+    border-top: none;
+    border-bottom: none;
 }
 
 /* UTILITIES */
@@ -228,47 +243,6 @@ input[type=checkbox] {
     display: none;
     font-size: 24px;
     user-select: none;
-}
-
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background-color: teal;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        background-color: #4c9e9e;
-        transition: 0.3s ease;
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .dropdown {
-        left: 50%;
-        top: 30px;
-        transform: translateX(35%);
-    }
-
-    .dropdown li:hover {
-        background-color: #4c9e9e;
-    }
 }
 
 .header-two {
