@@ -19,9 +19,7 @@
         transition: 0.3s ease;
     }
 
-    .menu li{
-        
-    }
+    .menu li {}
 
     .menu li+li {
         margin-top: 4rem;
@@ -47,18 +45,25 @@
     }
 
     .nav-btn button {
-        display: none;
+        display: block;
+
     }
 
-    .nav-btn2 button {
-        display: block;
+    .nav-btn {
+        position: absolute;
+        right: 3rem;
+        gap: 1rem;
+    }
+
+    .nav-btn button {
         background-color: var(--black_10);
         color: var(--white);
         border-radius: var(--radius-24);
-        padding: 1rem;
-        margin-left: 10rem;
+        padding: 0.5rem;
         border: 1px solid;
     }
+
+
 
     .header-two {
         display: grid;
@@ -71,23 +76,21 @@
 
 
 
-    
-.first-text {
-    padding: 1rem;
-    margin-top: 1rem;
-}
 
-.first-text h2 {
-    font-size: 2rem;
-}
+    .first-text {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
 
-.first-text p {
-    font-size: var(--fs-7);
-    margin-top: 1rem;
-    line-height: 2rem;
-}
+    .first-text h2 {
+        font-size: 2rem;
+    }
 
-
+    .first-text p {
+        font-size: var(--fs-7);
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
 
 
 
@@ -123,116 +126,118 @@
 
 
 
-.trend {
-    margin-top: 3rem;
-}
-
-.trend-tab {
-    padding: 0px;
-}
-
-.trend-tab .tab-btn.active {
-    background-color: var(--blue-crayola);
-}
-
-.trend-tab .tab-content {
-    display: grid;
-    gap: 100px;
-    width: 13rem;
-}
-
-.trend-card {
-    padding: 1rem;
-    border-radius: var(--radius-12);
-    transition: var(--transition-1);
-    margin-left: -2rem;
-}
-
-.trend-tab .tab-nav {
-    width: 20rem;
-    margin-left: -4rem;
-    padding: 1rem;
-
-}
-
-.trend-card:is(:hover, .active) {
-    background-color: var(--gunmetal_50);
-    box-shadow: var(--shadow-3);
-}
-
-.trend-card .card-title-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.trend-card .card-title {
-    color: var(--white);
-    font-size: 1rem;
-
-}
-
-.trend-card .card-title:is(:hover, :focus) {
-    color: var(--blue-crayola);
-}
-
-.trend-card .card-title .span {
-    color: var(--cadet-blue-crayola);
-    display: inline-block;
-    margin-inline-start: 5px;
-}
-
-.trend-card .card-value {
-    color: var(--white);
-    font-size: 1.3rem;
-    font-weight: var(--fw-700);
-    margin-block: 10px;
-}
-
-.trend-card .card-analytics {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.trend-card .current-price {
-    font-size: var(--fs-7);
-}
-
-.container {
-    padding-inline: 80px;
-}
-
-.section {
-    padding-block: var(--section-padding);
-}
-
-[data-section]>* {
-    transform: translateY(50px);
-    opacity: 1;
-    transition: var(--transition-3);
-}
-
-[data-section].active>* {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
-.badge {
-    color: var(--white);
-    font-size: var(--fs-8);
-    font-weight: var(--fw-700);
-    padding: 4px 8px;
-    border-radius: 50px;
-}
+    .trend {
+        margin-top: 3rem;
+    }
 
-.badge.red {
-    background-color: var(--presian-red);
-}
+    .trend-tab {
+        padding: 0px;
+    }
 
-.badge.green {
-    background-color: var(--medium-sea-green);
-}
+    .trend-tab .tab-btn.active {
+        background-color: var(--blue-crayola);
+    }
+
+    .trend-tab .tab-content {
+        display: grid;
+        gap: 100px;
+        width: 13rem;
+    }
+
+    .trend-card {
+        padding: 1rem;
+        border-radius: var(--radius-12);
+        transition: var(--transition-1);
+        margin-left: -2rem;
+    }
+
+    .trend-tab .tab-nav {
+        width: 20rem;
+        margin-left: -4rem;
+        padding: 1rem;
+
+    }
+
+    .trend-card:is(:hover, .active) {
+        background-color: var(--gunmetal_50);
+        box-shadow: var(--shadow-3);
+    }
+
+    .trend-card .card-title-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .trend-card .card-title {
+        color: var(--white);
+        font-size: 1rem;
+
+    }
+
+    .trend-card .card-title:is(:hover, :focus) {
+        color: var(--blue-crayola);
+    }
+
+    .trend-card .card-title .span {
+        color: var(--cadet-blue-crayola);
+        display: inline-block;
+        margin-inline-start: 5px;
+    }
+
+    .trend-card .card-value {
+        color: var(--white);
+        font-size: 1.3rem;
+        font-weight: var(--fw-700);
+        margin-block: 10px;
+    }
+
+    .trend-card .card-analytics {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .trend-card .current-price {
+        font-size: var(--fs-7);
+    }
+
+    .container {
+        padding-inline: 80px;
+    }
+
+    .section {
+        padding-block: var(--section-padding);
+    }
+
+    [data-section]>* {
+        transform: translateY(50px);
+        opacity: 1;
+        transition: var(--transition-3);
+    }
+
+    [data-section].active>* {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    .badge {
+        color: var(--white);
+        font-size: var(--fs-8);
+        font-weight: var(--fw-700);
+        padding: 4px 8px;
+        border-radius: 50px;
+    }
+
+    .badge.red {
+        background-color: var(--presian-red);
+    }
+
+    .badge.green {
+        background-color: var(--medium-sea-green);
+    }
 
 }
